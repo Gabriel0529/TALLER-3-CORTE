@@ -39,7 +39,7 @@ const PeticionApi = () => {
   return (
     
     <div>
-        <h1>PETICIÓN AL API DE RICK AND MORTY</h1>
+        <h1>PETICIÓN AL API DE DIGIMON</h1>
         <button onClick={traer}>Traer Personajes</button>
         <button onClick={siguiente}>Siguiente</button>
         <button onClick={atras}>Atrás</button>
