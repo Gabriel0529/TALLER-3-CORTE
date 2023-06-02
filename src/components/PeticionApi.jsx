@@ -16,7 +16,7 @@ const PeticionApi = () => {
             )
             setPersonajes(auxPersonajes)
            
-        }catch(error){
+        }   catch(error){
             console.log(error)
         }
     }
@@ -48,9 +48,9 @@ const PeticionApi = () => {
         <button onClick={atras}>Atrás</button>
         {
             personajes.map((aux) => (
-                <div key={aux.id}>
+                <div key={aux.name}>
                     <h4>{aux.name}</h4>
-                    <img src={aux.image} alt={aux.name} />
+                    <img src={aux.img} alt={aux.name} />
                 </div>
             ))
         }
