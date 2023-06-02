@@ -8,7 +8,7 @@ const PeticionApi = () => {
     const traerPersonajes = async(next) =>{
         
         try{
-            const res = await fetch(`https://rickandmortyapi.com/api/character/?page=${next}`)
+            const res = await fetch(`https://digimon-api.vercel.app/api/digimon?page=${next}`)
             const respuesta = await res.json()
             const auxPersonajes =   respuesta.results
             setPersonajes(auxPersonajes)
