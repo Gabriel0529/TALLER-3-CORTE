@@ -10,7 +10,10 @@ const PeticionApi = () => {
         try{
             const res = await fetch(`https://digimon-api.vercel.app/api/digimon?page=${next}`)
             const respuesta = await res.json()
-            const auxPersonajes =   respuesta.results
+            const auxPersonajes =   respuesta.slice(
+                (paginacion - 1)*10,
+                paginacion * 10
+            )
             setPersonajes(auxPersonajes)
            
         }catch(error){
